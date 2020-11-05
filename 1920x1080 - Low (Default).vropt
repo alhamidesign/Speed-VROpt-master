@@ -1,0 +1,1751 @@
+<vropt>
+<Asset renderer="vray" url="/EffectLens" type="settings" layout="">
+ <plugin>
+  <vrayplugin version="7" type="settings" name="EffectLens">
+   <parameters>
+    <parameter handler="ComboBoxHandler" listType="none" type="integer" name="glareType" label="Type">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="glareCamSidesOn" label="Sides On">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="glareNumSides" label="Num Sides">
+     <value>6</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="bloomOn" label="On">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="bloomWeight" label="Weight">
+     <value>20.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="bloomSize" label="Size">
+     <value>20.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="glareCamRotation" label="Camera Rotation">
+     <value>0.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="glareOn" label="On">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="bloomFillEdges" label="Fill Edges">
+     <value>1</value>
+    </parameter>
+    <parameter handler="ComboBoxHandler" listType="none" type="integer" name="bloomBuffer" label="Mode">
+     <value>1</value>
+    </parameter>
+    <parameter handler="ComboBoxHandler" listType="none" type="integer" name="glareBuffer" label="Mode">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bitmap" name="glareBitmap" label="Glare Map"/>
+    <parameter handler="default" listType="none" type="float" name="glareFNumber" label="F-Number">
+     <value>8.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="glareDiffractionOn" label="Diffraction On">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="bloomShape" label="Shape">
+     <value>4.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="glareSize" label="Size">
+     <value>20.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="glareFillEdges" label="Fill Edges">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="glareUseObstacleImage" label="Use Obstacle Map">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="glareWeight" label="Weight">
+     <value>50.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bitmap" name="glareObstacleImage" label="Obstacle Map"/>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/SettingsMotionBlur" type="settings" layout="">
+ <plugin>
+  <vrayplugin version="7" type="settings" name="SettingsMotionBlur">
+   <parameters>
+    <parameter handler="default" listType="none" type="bool" name="on" label="On">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="geom_samples" label="Geometry samples">
+     <value>2</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="subdivs" label="Subdivs">
+     <value>6</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="interval_center" label="Interval center">
+     <value>0.500000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="bias" label="Bias">
+     <value>0.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="duration" label="Duration (frames)">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="low_samples" label="Prepass samples">
+     <value>1</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/SettingsRaycaster" type="settings" layout="">
+ <plugin>
+  <vrayplugin version="7" type="settings" name="SettingsRaycaster">
+   <parameters>
+    <parameter handler="default" listType="none" type="integer" name="maxLevels" label="Max tree depth">
+     <value>80</value>
+    </parameter>
+    <parameter isUserData="1" handler="ComboBoxHandler" listType="none" type="integer" name="defaultGeometryType" label="Default geometry">
+     <value>2</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="dynMemLimit" label="Dynamic memory limit">
+     <value>1024</value>
+    </parameter>
+    <parameter handler="None" listType="none" type="integer" name="optLevel" label="optLevel">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="minLeafSize" label="Min leaf size">
+     <value>0.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="faceLevelCoef" label="Face/level coef">
+     <value>1.000000</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/SettingsDMCSampler" type="settings" layout="">
+ <plugin>
+  <vrayplugin version="7" type="settings" name="SettingsDMCSampler">
+   <parameters>
+    <parameter handler="default" listType="none" type="integer" name="adaptive_min_samples" label="Min samples">
+     <value>8</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="adaptive_amount" label="Adaptive amount">
+     <value>0.850000</value>
+    </parameter>
+    <parameter handler="ComboBoxHandler" listType="none" type="integer" name="path_sampler_type" label="Path sampler">
+     <value>2</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="subdivs_mult" label="Global subdivs mult">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="adaptive_threshold" label="Noise threshold">
+     <value>0.010000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="time_dependent" label="time_dependent">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/SettingsPhotonMap" type="settings" layout="">
+ <plugin>
+  <vrayplugin version="7" type="settings" name="SettingsPhotonMap">
+   <parameters>
+    <parameter handler="default" listType="none" type="integer" name="prefilter_samples" label="Interp. samples">
+     <value>10</value>
+    </parameter>
+    <parameter handler="FileBrowserHandler" listType="none" type="string" name="file" label="File">
+     <value></value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="show_calc_phase" label="show_calc_phase">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="retrace_bounces" label="Retrace bounces">
+     <value>10</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="bounces" label="Bounces">
+     <value>10</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="convex_hull_estimate" label="Convex hull area estimate">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="dont_delete" label="Don't delete">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="prefilter" label="Pre-filter">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="max_photons" label="Max photons">
+     <value>30</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="store_direct_light" label="Store direct light">
+     <value>1</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="bool" name="search_distance_toggle" label="Override Search Distance">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="max_density" label="Max density">
+     <value>0.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="auto_search_distance" label="Auto search dist">
+     <value>1</value>
+    </parameter>
+    <parameter handler="FileBrowserHandler" listType="none" type="string" name="auto_save_file" label="Auto save File">
+     <value></value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="multiplier" label="Multiplier">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="retrace_corners" label="Retrace threshold">
+     <value>0.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="search_distance" label="Search dist">
+     <value>999999984306749440.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="auto_save" label="Auto save">
+     <value>0</value>
+    </parameter>
+    <parameter handler="ComboBoxHandler" listType="none" type="integer" name="mode" label="Mode">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/SettingsOutput" type="settings" layout="">
+ <plugin>
+  <vrayplugin version="7" type="settings" name="SettingsOutput">
+   <parameters>
+    <parameter handler="ComboBoxHandler" listType="none" type="integer" name="img_rawFileVFB" label="VFB mode">
+     <value>2</value>
+    </parameter>
+    <parameter handler="None" listType="none" type="float" name="rgn_width" label="rgn_width">
+     <value>640.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="img_rawFile" label="Render to VRImage">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="img_width" label="Width">
+     <value>1920</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="bool" name="override_viewport" label="Override viewport">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="img_height" label="Height">
+     <value>1080</value>
+    </parameter>
+    <parameter handler="None" listType="none" type="integer" name="r_height" label="r_height">
+     <value>480</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="frame_start" label="Frame start">
+     <value>0</value>
+    </parameter>
+    <parameter handler="FrameListHandler" listType="none" type="list" name="frames" label="Frames">
+     <value>
+      <list/>
+     </value>
+    </parameter>
+    <parameter handler="None" listType="none" type="integer" name="bmp_width" label="bmp_width">
+     <value>640</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="double" name="anim_start" label="Animation start">
+     <value>0.000000</value>
+    </parameter>
+    <parameter handler="None" listType="none" type="float" name="rgn_height" label="rgn_height">
+     <value>480.000000</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="bool" name="save_render" label="Save output">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="frames_per_second" label="FPS">
+     <value>30.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="frame_stamp_enabled" label="frame_stamp_enabled">
+     <value>0</value>
+    </parameter>
+    <parameter handler="None" listType="none" type="float" name="rgn_left" label="rgn_left">
+     <value>0.000000</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="bool" name="do_animation" label="Animation on">
+     <value>0</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="bool" name="render_frame_range" label="Render only specified frames">
+     <value>0</value>
+    </parameter>
+    <parameter handler="None" listType="none" type="integer" name="r_left" label="r_left">
+     <value>0</value>
+    </parameter>
+    <parameter handler="FileBrowserHandler" listType="none" type="string" name="img_file" label="Output file">
+     <value></value>
+    </parameter>
+    <parameter handler="None" listType="none" type="float" name="rgn_top" label="rgn_top">
+     <value>0.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="img_pixelAspect" label="Pixel aspect ratio">
+     <value>1.000000</value>
+    </parameter>
+    <parameter isUserData="1" handler="LockButtonHandler" listType="none" type="bool" name="img_imageAspectLocked" label="L">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="string" name="frame_stamp_text" label="frame_stamp_text">
+     <value></value>
+    </parameter>
+    <parameter isUserData="1" handler="LockButtonHandler" listType="none" type="bool" name="img_pixelAspectLocked" label="L">
+     <value>0</value>
+    </parameter>
+    <parameter isUserData="1" handler="ComboBoxHandler" listType="none" type="integer" name="frame_rate" label="Frame rate">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="string" name="img_dir" label="Dir">
+     <value></value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="float" name="img_imageAspect" label="Image aspect ratio">
+     <value>1.777778</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="img_separateAlpha" label="Save alpha separate">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="double" name="anim_end" label="Animation end">
+     <value>0.000000</value>
+    </parameter>
+    <parameter handler="None" listType="none" type="integer" name="r_top" label="r_top">
+     <value>0</value>
+    </parameter>
+    <parameter handler="None" listType="none" type="integer" name="bmp_height" label="bmp_height">
+     <value>480</value>
+    </parameter>
+    <parameter handler="None" listType="none" type="integer" name="r_width" label="r_width">
+     <value>640</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="img_file_needFrameNumber" label="Include Frame Number">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/SettingsVFBChannels" type="settings" layout="">
+ <plugin>
+  <vrayplugin version="7" type="settings" name="SettingsVFBChannels">
+   <parameters>
+    <parameter handler="default" listType="none" type="bool" name="zdepth_clamp" label="Clamp">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="zdepth_white" label="White">
+     <value>1500.000000</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="bool" name="zdepth_set_from_camera" label="Set from camera">
+     <value>1</value>
+    </parameter>
+    <parameter isUserData="1" handler="RenderChannelHandler" listType="none" type="list" name="other_channels" label="Other channels">
+     <value>
+      <list/>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="zdepth_black" label="Black">
+     <value>0.001000</value>
+    </parameter>
+    <parameter handler="ListBoxMultiSelectHandler" listType="string" type="list" name="channel_names" label="VFB channels">
+     <value>
+      <list>
+       <entry>RGB color</entry>
+       <entry>Alpha</entry>
+      </list>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="unfiltered_fragment_method" label="unfiltered_fragment_method">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/SettingsUnitsInfo" type="settings" layout="">
+ <plugin>
+  <vrayplugin version="7" type="settings" name="SettingsUnitsInfo">
+   <parameters>
+    <parameter handler="default" listType="none" type="float" name="photometric_scale" label="Photometric Scale">
+     <value>0.001000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="meters_scale" label="Meters Scale">
+     <value>0.025400</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="vector" name="scene_upDir" label="Up Direction">
+     <value>
+      <x>0.000000</x>
+      <y>0.000000</y>
+      <z>1.000000</z>
+     </value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/SettingsImageFilter" type="settings" layout="">
+ <plugin>
+  <vrayplugin version="7" type="settings" name="SettingsImageFilter">
+   <parameters>
+    <parameter handler="default" listType="none" type="bool" name="on" label="On">
+     <value>1</value>
+    </parameter>
+    <parameter handler="ComboBoxHandler" listType="none" type="integer" name="type" label="Type">
+     <value>5</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="size" label="Size">
+     <value>1.500000</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/RenderView" type="settings" layout="">
+ <plugin>
+  <vrayplugin version="7" type="settings" name="RenderView">
+   <parameters>
+    <parameter handler="default" listType="none" type="float" name="fov" label="Field of View">
+     <value>1.001604</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="lens_rotation" label="Lens Rotation">
+     <value>0.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="clipping_near" label="Clip Near">
+     <value>0.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="clipping" label="Use Clipping Planes">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="zoom" label="Zoom">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="transform" name="transform" label="transform">
+     <value>
+      <vector>
+       <x>-0.737638</x>
+       <y>-0.675197</y>
+       <z>0.000000</z>
+      </vector>
+      <vector>
+       <x>0.024718</x>
+       <y>-0.027004</y>
+       <z>0.999330</z>
+      </vector>
+      <vector>
+       <x>-0.674744</x>
+       <y>0.737143</y>
+       <z>0.036609</z>
+      </vector>
+      <vector>
+       <x>-248.866089</x>
+       <y>246.957230</y>
+       <z>45.385132</z>
+      </vector>
+     </value>
+    </parameter>
+    <parameter handler="None" listType="none" type="bool" name="dont_affect_settings" label="dont_affect_settings">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="use_scene_offset" label="use_scene_offset">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="clipping_far" label="Clip Far">
+     <value>999999984306749440.000000</value>
+    </parameter>
+    <parameter handler="None" listType="none" type="bool" name="orthographic" label="Orthographic">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="focalDistance" label="Focal Distance">
+     <value>517.517212</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="aperture" label="Aperture">
+     <value>0.100000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="frame_samples" label="Samples">
+     <value>2</value>
+    </parameter>
+    <parameter handler="None" listType="none" type="float" name="orthographicWidth" label="Ortho Width">
+     <value>1.000000</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/SettingsDefaultDisplacement" type="settings" layout="">
+ <plugin>
+  <vrayplugin version="7" type="settings" name="SettingsDefaultDisplacement">
+   <parameters>
+    <parameter handler="default" listType="none" type="bool" name="override_on" label="Override on">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="tightBounds" label="Tight bounds">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="maxSubdivs" label="Max subdivs">
+     <value>256</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="edgeLength" label="Edge length">
+     <value>4.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="relative" label="Relative to bbox">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="viewDependent" label="View dependent">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="amount" label="Amount">
+     <value>1.000000</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/SettingsRegionsGenerator" type="settings" layout="">
+ <plugin>
+  <vrayplugin version="7" type="settings" name="SettingsRegionsGenerator">
+   <parameters>
+    <parameter handler="ComboBoxHandler" listType="none" type="integer" name="xymeans" label="Means">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="xc" label="X">
+     <value>32</value>
+    </parameter>
+    <parameter handler="ComboBoxHandler" listType="none" type="integer" name="seqtype" label="Region sequence">
+     <value>4</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="yc" label="Y">
+     <value>32</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="reverse" label="Reverse sequence">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/SettingsCamera" type="settings" layout="">
+ <plugin>
+  <vrayplugin version="7" type="settings" name="SettingsCamera">
+   <parameters>
+    <parameter handler="default" listType="none" type="float" name="fov" label="FOV">
+     <value>45.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="dist" label="Dist">
+     <value>2.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="curve" label="Curve">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="height" label="Height">
+     <value>400.000000</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="None" type="bool" name="override_fov" label="Override FOV">
+     <value>0</value>
+    </parameter>
+    <parameter handler="None" listType="none" type="bool" name="dont_affect_settings" label="dont_affect_settings">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="auto_fit" label="Auto-fit">
+     <value>1</value>
+    </parameter>
+    <parameter handler="ComboBoxHandler" listType="none" type="integer" name="type" label="Type">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/SettingsColorMapping" type="settings" layout="">
+ <plugin>
+  <vrayplugin version="7" type="settings" name="SettingsColorMapping">
+   <parameters>
+    <parameter handler="default" listType="none" type="bool" name="clamp_output" label="Clamp output">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="dark_mult" label="Dark multiplier">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="bright_mult" label="Bright multiplier">
+     <value>0.800000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="adaptation_only" label="Don't affect colors (adaptation only)">
+     <value>0</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="bool" name="gamma_correct_ldr_textures" label="Correct LDR textures">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="subpixel_mapping" label="Sub-pixel mapping">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="clamp_level" label="Clamp level">
+     <value>1.000000</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="float" name="input_gamma" label="Input gamma">
+     <value>2.200000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="affect_background" label="Affect background">
+     <value>1</value>
+    </parameter>
+    <parameter handler="ComboBoxHandler" listType="none" type="integer" name="type" label="Type">
+     <value>6</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="linearWorkflow" label="Linear workflow">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="gamma" label="Gamma">
+     <value>2.200000</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="bool" name="gamma_correct_rgb" label="Correct RGB colors">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/SettingsIrradianceMap" type="settings" layout="">
+ <plugin>
+  <vrayplugin version="7" type="settings" name="SettingsIrradianceMap">
+   <parameters>
+    <parameter handler="default" listType="none" type="integer" name="subdivs" label="HSph. subdivs">
+     <value>50</value>
+    </parameter>
+    <parameter handler="FileBrowserHandler" listType="none" type="string" name="file" label="File">
+     <value></value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="auto_save" label="Auto save">
+     <value>0</value>
+    </parameter>
+    <parameter handler="ComboBoxHandler" listType="none" type="integer" name="lookup_mode" label="Sample lookup">
+     <value>3</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="show_calc_phase" label="Show calc phase">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="multiple_views" label="Use camera path">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="detail_radius" label="Radius">
+     <value>60.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="color_threshold" label="Clr thresh">
+     <value>0.400000</value>
+    </parameter>
+    <parameter handler="ComboBoxHandler" listType="none" type="integer" name="interpolation_mode" label="Interpolation type">
+     <value>1</value>
+    </parameter>
+    <parameter handler="CheckBoxHandler" listType="none" type="integer" name="randomize_samples" label="Randomize samples">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="max_rate" label="Max rate">
+     <value>-2</value>
+    </parameter>
+    <parameter handler="FileBrowserHandler" listType="none" type="string" name="auto_save_file" label="Auto save file">
+     <value></value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="show_samples" label="Show samples">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="show_direct_light" label="Show direct light">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="check_sample_visibility" label="Check sample visibility">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="min_rate" label="Min rate">
+     <value>-3</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="distance_threshold" label="Dist thresh">
+     <value>0.100000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="normal_threshold" label="Nrm Thresh">
+     <value>0.300000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="detail_subdivs_mult" label="Subdivs mult">
+     <value>0.300000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="interp_samples" label="Interp. samples">
+     <value>20</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="interp_frames" label="Interp. frames">
+     <value>2</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="multipass" label="Multipass">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="calc_interp_samples" label="Calc pass interp samples">
+     <value>15</value>
+    </parameter>
+    <parameter handler="ComboBoxHandler" listType="none" type="integer" name="detail_scale" label="Scale">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="dont_delete" label="Don't delete">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="detail_enhancement" label="On">
+     <value>0</value>
+    </parameter>
+    <parameter handler="ComboBoxHandler" listType="none" type="integer" name="mode" label="Mode">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/RTEngine" type="settings" layout="">
+ <plugin>
+  <vrayplugin version="7" type="settings" name="RTEngine">
+   <parameters>
+    <parameter handler="default" listType="none" type="bool" name="separate_window" label="Separate Window">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="trace_depth" label="Trace Depth">
+     <value>5</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="use_opencl" label="Use OpenCL">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="gi_reflective_caustics" label="Reflect Caustics">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="coherent_tracing" label="Coherent Tracing">
+     <value>0</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="bool" name="show_mask" label="Show AA mask">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="enabled" label="Enable">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="bundle_size" label="Ray Bundle Size">
+     <value>16</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="integer" name="max_sample_level" label="Maximum sample level">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="stereo_eye_distance" label="Eye Distance">
+     <value>6.500000</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="float" name="max_render_time" label="Max render time">
+     <value>0.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="samples_per_pixel" label="Rays per Pixel">
+     <value>4</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="use_gi" label="Use GI">
+     <value>1</value>
+    </parameter>
+    <parameter handler="CheckBoxHandler" listType="none" type="integer" name="stereo_mode" label="Enable">
+     <value>0</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="bool" name="stop_when_render_done" label="Stop when render done">
+     <value>0</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="float" name="noise_threshold" label="AA threshold">
+     <value>0.001000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="gi_depth" label="GI Depth">
+     <value>3</value>
+    </parameter>
+    <parameter isUserData="1" handler="ComboBoxHandler" listType="none" type="integer" name="rt_mode" label="RT Mode">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="gi_refractive_caustics" label="Refract Caustics">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="opencl_texsize" label="OpenCL Texture Size">
+     <value>512</value>
+    </parameter>
+    <parameter handler="ComboBoxHandler" listType="none" type="integer" name="stereo_focus" label="Focus">
+     <value>2</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/SettingsLightCache" type="settings" layout="">
+ <plugin>
+  <vrayplugin version="7" type="settings" name="SettingsLightCache">
+   <parameters>
+    <parameter handler="default" listType="none" type="bool" name="use_for_glossy_rays" label="Use light cache for glossy rays">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="prefilter" label="Pre-filter">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="subdivs" label="Subdivs">
+     <value>800</value>
+    </parameter>
+    <parameter handler="FileBrowserHandler" listType="none" type="string" name="file" label="File">
+     <value></value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="auto_save" label="Auto save">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="show_calc_phase" label="Show calc phase">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="depth" label="Depth">
+     <value>100</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="multiple_views" label="Use camera path">
+     <value>0</value>
+    </parameter>
+    <parameter handler="FileBrowserHandler" listType="none" type="string" name="auto_save_file" label="Auto save File">
+     <value></value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="adaptive_sampling" label="Adaptive tracing">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="retrace_threshold" label="Retrace threshold">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="prefilter_samples" label="Pre-filter samples">
+     <value>10</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="min_paths_per_sample" label="Min paths per sample">
+     <value>16</value>
+    </parameter>
+    <parameter handler="ComboBoxHandler" listType="none" type="bool" name="world_scale" label="Scale">
+     <value>0</value>
+    </parameter>
+    <parameter handler="ComboBoxHandler" listType="none" type="integer" name="filter_type" label="Filter">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="adaptive_dirs_only" label="Use directions only">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="filter_samples" label="Interp samples">
+     <value>10</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="filter_size" label="Filter size">
+     <value>0.060000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="dont_delete" label="Don't delete">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="sample_size" label="Sample size">
+     <value>0.020000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="store_direct_light" label="Store direct light">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="retrace_enabled" label="Retrace threshold">
+     <value>0</value>
+    </parameter>
+    <parameter handler="ComboBoxHandler" listType="none" type="integer" name="mode" label="Mode">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="num_passes" label="Number of passes">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/SettingsEnvironment/gi_tex" type="texture" layout="">
+ <plugin>
+  <vrayplugin version="7" type="texture" name="TexAColorOp">
+   <parameters>
+    <parameter handler="default" listType="none" type="float texture" name="result_alpha" label="Alpha">
+     <value></value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="color_b" label="Color B">
+     <value></value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="color_a" label="Color A">
+     <value>
+      <r>0.800000</r>
+      <g>0.901961</g>
+      <b>1.000000</b>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float texture" name="mult_a" label="Mult A">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="ComboBoxHandler" listType="none" type="integer" name="mode" label="Mode">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float texture" name="mult_b" label="Mult B">
+     <value></value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/SunLight" type="light" layout="">
+ <plugin>
+  <vrayplugin version="7" type="light" name="SunLight">
+   <parameters>
+    <parameter handler="default" listType="none" type="color" name="shadow_color" label="Color">
+     <value>
+      <r>0.000000</r>
+      <g>0.000000</g>
+      <b>0.000000</b>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="causticMult" label="Caustic Mult">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="PluginListPicker" listType="none" type="list" name="channels_specular" label="Specular">
+     <value>
+      <list/>
+     </value>
+    </parameter>
+    <parameter handler="PluginListPicker" listType="none" type="list" name="channels" label="Light result">
+     <value>
+      <list/>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="invisible" label="Invisible">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="affectDiffuse" label="Affect Diffuse">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="size_multiplier" label="Size">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="causticSubdivs" label="Caustic Subdivs">
+     <value>1000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="transform" name="transform" label="transform">
+     <value>
+      <vector>
+       <x>1.000000</x>
+       <y>0.000000</y>
+       <z>0.000000</z>
+      </vector>
+      <vector>
+       <x>0.000000</x>
+       <y>1.000000</y>
+       <z>0.000000</z>
+      </vector>
+      <vector>
+       <x>0.000000</x>
+       <y>0.000000</y>
+       <z>1.000000</z>
+      </vector>
+      <vector>
+       <x>0.000000</x>
+       <y>0.000000</y>
+       <z>0.000000</z>
+      </vector>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="atmos_shadows" label="Atmos Shadows">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="water_vapour" label="Water Vapor">
+     <value>2.000000</value>
+    </parameter>
+    <parameter handler="PluginListPicker" listType="none" type="list" name="channels_raw" label="Raw light">
+     <value>
+      <list/>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="intensity_multiplier" label="Intensity">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="photonSubdivs" label="Photon Subdivs">
+     <value>500</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="diffuseMult" label="Diffuse Mult">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="shadow_color_tex" label="shadow_color_tex">
+     <value></value>
+    </parameter>
+    <parameter handler="ComboBoxHandler" listType="none" type="integer" name="sky_model" label="Sky Model">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="shadowBias" label="Bias">
+     <value>0.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="shadows" label="On">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="horiz_illum" label="Horizon Illum.">
+     <value>25000.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="vector" name="up_vector" label="up_vector">
+     <value>
+      <x>0.000000</x>
+      <y>0.000000</y>
+      <z>1.000000</z>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="photon_radius" label="Photon Radius">
+     <value>50.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="shadow_subdivs" label="Subdivs">
+     <value>8</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="enabled" label="Enabled">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="ozone" label="Ozone">
+     <value>0.350000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="turbidity" label="Turbidity">
+     <value>3.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="affectSpecular" label="Affect Specular">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="transform" name="target_transform" label="target_transform">
+     <value>
+      <vector>
+       <x>1.000000</x>
+       <y>0.000000</y>
+       <z>0.000000</z>
+      </vector>
+      <vector>
+       <x>0.000000</x>
+       <y>1.000000</y>
+       <z>0.000000</z>
+      </vector>
+      <vector>
+       <x>0.000000</x>
+       <y>0.000000</y>
+       <z>1.000000</z>
+      </vector>
+      <vector>
+       <x>0.000000</x>
+       <y>0.000000</y>
+       <z>0.000000</z>
+      </vector>
+     </value>
+    </parameter>
+    <parameter handler="PluginListPicker" listType="none" type="list" name="channels_diffuse" label="Diffuse">
+     <value>
+      <list/>
+     </value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/SettingsEnvironment/Texture1" type="texture" layout="">
+ <plugin>
+  <vrayplugin version="7" type="texture" name="TexSky">
+   <parameters>
+    <parameter handler="default" listType="none" type="float" name="size_multiplier" label="Size Mult.">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="horiz_illum" label="Horizon Illum.">
+     <value>25000.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="vector" name="up_vector" label="Up Vector">
+     <value>
+      <x>0.000000</x>
+      <y>0.000000</y>
+      <z>1.000000</z>
+     </value>
+    </parameter>
+    <parameter handler="SunPickerHandler" listType="none" type="plugin" name="sun" label="Sun">
+     <value>/SunLight</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="transform" name="transform" label="transform">
+     <value>
+      <vector>
+       <x>1.000000</x>
+       <y>0.000000</y>
+       <z>0.000000</z>
+      </vector>
+      <vector>
+       <x>0.000000</x>
+       <y>1.000000</y>
+       <z>0.000000</z>
+      </vector>
+      <vector>
+       <x>0.000000</x>
+       <y>0.000000</y>
+       <z>1.000000</z>
+      </vector>
+      <vector>
+       <x>0.000000</x>
+       <y>0.000000</y>
+       <z>0.000000</z>
+      </vector>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="ozone" label="Ozone">
+     <value>0.350000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="invisible" label="Invisible">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="water_vapour" label="Water Vapor">
+     <value>2.000000</value>
+    </parameter>
+    <parameter handler="ComboBoxHandler" listType="none" type="integer" name="sky_model" label="Sky Model">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="turbidity" label="Turbidity">
+     <value>3.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="intensity_multiplier" label="Sky Brightness">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="transform" name="target_transform" label="target_transform">
+     <value>
+      <vector>
+       <x>1.000000</x>
+       <y>0.000000</y>
+       <z>0.000000</z>
+      </vector>
+      <vector>
+       <x>0.000000</x>
+       <y>1.000000</y>
+       <z>0.000000</z>
+      </vector>
+      <vector>
+       <x>0.000000</x>
+       <y>0.000000</y>
+       <z>1.000000</z>
+      </vector>
+      <vector>
+       <x>0.000000</x>
+       <y>0.000000</y>
+       <z>0.000000</z>
+      </vector>
+     </value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/SettingsEnvironment/reflect_tex" type="texture" layout="">
+ <plugin>
+  <vrayplugin version="7" type="texture" name="TexAColorOp">
+   <parameters>
+    <parameter handler="default" listType="none" type="float texture" name="result_alpha" label="Alpha">
+     <value></value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="color_b" label="Color B">
+     <value></value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="color_a" label="Color A">
+     <value>
+      <r>0.000000</r>
+      <g>0.000000</g>
+      <b>0.000000</b>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float texture" name="mult_a" label="Mult A">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="ComboBoxHandler" listType="none" type="integer" name="mode" label="Mode">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float texture" name="mult_b" label="Mult B">
+     <value></value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/SettingsEnvironment/refract_tex" type="texture" layout="">
+ <plugin>
+  <vrayplugin version="7" type="texture" name="TexAColorOp">
+   <parameters>
+    <parameter handler="default" listType="none" type="float texture" name="result_alpha" label="Alpha">
+     <value></value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="color_b" label="Color B">
+     <value></value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="color_a" label="Color A">
+     <value>
+      <r>0.000000</r>
+      <g>0.000000</g>
+      <b>0.000000</b>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float texture" name="mult_a" label="Mult A">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="ComboBoxHandler" listType="none" type="integer" name="mode" label="Mode">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float texture" name="mult_b" label="Mult B">
+     <value></value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/SettingsEnvironment/bg_tex" type="texture" layout="">
+ <plugin>
+  <vrayplugin version="7" type="texture" name="TexAColorOp">
+   <parameters>
+    <parameter handler="default" listType="none" type="float texture" name="result_alpha" label="Alpha">
+     <value></value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="color_b" label="Color B">
+     <value></value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="color_a" label="Color A">
+     <value>/SettingsEnvironment/Texture1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float texture" name="mult_a" label="Mult A">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="ComboBoxHandler" listType="none" type="integer" name="mode" label="Mode">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float texture" name="mult_b" label="Mult B">
+     <value></value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/SettingsEnvironment" type="settings" layout="">
+ <plugin>
+  <vrayplugin version="7" type="settings" name="SettingsEnvironment">
+   <parameters>
+    <parameter isUserData="1" handler="default" listType="none" type="acolor texture" name="reflect_tex_tex" label="Reflect Texture">
+     <value></value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="num_environment_objects" label="num_environment_objects">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="use_refract" label="On">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="refract_tex_mult" label="Refract Texture Multiplier">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="use_gi" label="On">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="use_bg" label="On">
+     <value>1</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="bool" name="bg_tex_on" label="On">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="gi_tex_mult" label="GI Texture Multiplier">
+     <value>30.000000</value>
+    </parameter>
+    <parameter handler="ColorTexFrameHandler" gammaCorrect="1" listType="none" type="acolor texture" name="gi_tex" label="GI Texture">
+     <value>/SettingsEnvironment/gi_tex</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="acolor texture" name="bg_tex_tex" label="Background Texture">
+     <value>/SettingsEnvironment/Texture1</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="color" name="refract_color" label="Refract color">
+     <value>
+      <r>0.000000</r>
+      <g>0.000000</g>
+      <b>0.000000</b>
+     </value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="acolor texture" name="gi_tex_tex" label="GI Texture"/>
+    <parameter handler="default" listType="none" type="integer" name="texture_multiplier_mode" label="Texture multiplier mode">
+     <value>0</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="bool" name="refract_tex_on" label="On">
+     <value>1</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="color" name="gi_color" label="GI color">
+     <value>
+      <r>0.800000</r>
+      <g>0.901961</g>
+      <b>1.000000</b>
+     </value>
+    </parameter>
+    <parameter handler="None" listType="none" type="plugin" name="environment_volume" label="Environment volume">
+     <value></value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="color" name="reflect_color" label="Reflect color">
+     <value>
+      <r>0.000000</r>
+      <g>0.000000</g>
+      <b>0.000000</b>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="use_reflect" label="On">
+     <value>0</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="color" name="bg_color" label="BG color">
+     <value>
+      <r>0.000000</r>
+      <g>0.000000</g>
+      <b>0.000000</b>
+     </value>
+    </parameter>
+    <parameter handler="ColorTexFrameHandler" gammaCorrect="1" listType="none" type="acolor texture" name="reflect_tex" label="Reflect Texture">
+     <value>/SettingsEnvironment/reflect_tex</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="acolor texture" name="refract_tex_tex" label="Refract Texture">
+     <value></value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="bool" name="reflect_tex_on" label="On">
+     <value>1</value>
+    </parameter>
+    <parameter handler="ColorTexFrameHandler" gammaCorrect="1" listType="none" type="acolor texture" name="refract_tex" label="Refract Texture">
+     <value>/SettingsEnvironment/refract_tex</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="reflect_tex_mult" label="Reflect Texture Multiplier">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="gi_tex_on" label="On">
+     <value>1</value>
+    </parameter>
+    <parameter handler="ColorTexFrameHandler" gammaCorrect="1" listType="none" type="acolor texture" name="bg_tex" label="Background Texture">
+     <value>/SettingsEnvironment/bg_tex</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="bg_tex_mult" label="Background Texture Multiplier">
+     <value>1.000000</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/SettingsDR" type="settings" layout="">
+ <plugin>
+  <vrayplugin version="7" type="settings" name="SettingsDR">
+   <parameters>
+    <parameter handler="default" listType="none" type="bool" name="on" label="On">
+     <value>0</value>
+    </parameter>
+    <parameter handler="DRServersHandler" listType="none" type="list" name="host_list" label="Hosts">
+     <value>
+      <list/>
+     </value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="bool" name="asset_coll" label="Asset collection">
+     <value>0</value>
+    </parameter>
+    <parameter isUserData="1" handler="ComboBoxHandler" listType="none" type="integer" name="mode" label="Mode">
+     <value>0</value>
+    </parameter>
+    <parameter isUserData="1" handler="FolderBrowserHandler" listType="none" type="string" name="folder" label="Shared folder">
+     <value></value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="bool" name="skipProcessingOnLocalMachine" label="Don't use local machine">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/CameraPhysical" type="settings" layout="">
+ <plugin>
+  <vrayplugin version="7" type="settings" name="CameraPhysical">
+   <parameters>
+    <parameter handler="default" listType="none" type="float" name="shutter_speed" label="Shutter speed">
+     <value>70.000000</value>
+    </parameter>
+    <parameter handler="None" listType="none" type="bool" name="use_moblur" label="Motion blur on">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="distortion" label="Distortion">
+     <value>0.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="subdivs" label="Subdivs">
+     <value>6</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="ISO" label="Film speed(ISO)">
+     <value>100.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="lens_shift" label="Lens shift">
+     <value>0.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="film_width" label="Specify film width">
+     <value>36.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="specify_fov" label="Specify fov">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="latency" label="Latency">
+     <value>0.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="fov" label="fov">
+     <value>1.570796</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="focus_distance" label="Focus distance">
+     <value>200.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="focal_length" label="Override focal length">
+     <value>40.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="shutter_offset" label="Shutter offset">
+     <value>0.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="color" name="white_balance" label="White balance">
+     <value>
+      <r>1.000000</r>
+      <g>1.000000</g>
+      <b>1.000000</b>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="f_number" label="F-number">
+     <value>8.000000</value>
+    </parameter>
+    <parameter handler="ComboBoxHandler" listType="none" type="integer" name="type" label="Type">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="blades_rotation" label="Rotation">
+     <value>0.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="targeted" label="Targeted">
+     <value>1</value>
+    </parameter>
+    <parameter handler="None" listType="none" type="float" name="dof_display_threshold" label="DOF threshold">
+     <value>0.001000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="blades_num" label="Sides">
+     <value>5</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="blades_enable" label="Blades">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="horizontal_shift" label="Horizontal shift">
+     <value>0.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="zoom_factor" label="Zoom factor">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="horizontal_offset" label="Horizontal offset">
+     <value>0.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="shutter_angle" label="Shutter angle">
+     <value>180.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="exposure" label="Exposure">
+     <value>1</value>
+    </parameter>
+    <parameter handler="None" listType="none" type="bool" name="specify_focus" label="Override focus distance">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="dont_affect_settings" label="On">
+     <value>0</value>
+    </parameter>
+    <parameter handler="None" listType="none" type="bool" name="use_dof" label="DOF on">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="anisotropy" label="Anisotropy">
+     <value>0.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="target_distance" label="Target distance">
+     <value>200.000000</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="bool" name="specify_film_width" label="Specify film width">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="vertical_offset" label="Vertical offset">
+     <value>0.000000</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="bool" name="override_focal_length" label="Override focal length">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="center_bias" label="Center bias">
+     <value>0.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="vignetting" label="Vignetting">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/SettingsOptions" type="settings" layout="">
+ <plugin>
+  <vrayplugin version="7" type="settings" name="SettingsOptions">
+   <parameters>
+    <parameter handler="default" listType="none" type="bool" name="light_doDefaultLights" label="Default lights">
+     <value>0</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="bool" name="batch_render" label="Batch render">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="light_doLights" label="Lights">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="light_onlyGI" label="Show GI only">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="mtl_maxDepth" label="Max depth">
+     <value>5</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="misc_transferAssets" label="Transfer assets">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="misc_lowThreadPriority" label="Low thread priority">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="misc_abortOnMissingAsset" label="Abort on missing asset">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="misc_useCachedAssets" label="Use cached assets">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="geom_backfaceCull" label="Force back face culling">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="mtl_transpMaxLevels" label="Max transp levels">
+     <value>50</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="ray_bias" label="Secondary ray bias">
+     <value>0.001000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="mtl_glossy" label="Glossy effects">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="light_doHiddenLights" label="Hidden lights">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="geom_doHidden" label="Hidden geom">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="mtl_uninvertedNormalBump" label="Uninverted normal bump">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="geom_displacement" label="Displacement">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="mtl_doMaps" label="Maps">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="mtl_reflectionRefraction" label="Reflection/refraction">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="mtl_filterMaps" label="Filter maps">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="mtl_override_on" label="Override materials">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="mtl_limitDepth" label="Max depth">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="mtl_filterMapsForSecondaryRays" label="Filter maps for GI">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="mtl_transpCutoff" label="Transp cutoff">
+     <value>0.001000</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="color" name="mtl_override_color" label="Override color">
+     <value>
+      <r>0.784314</r>
+      <g>0.784314</g>
+      <b>0.784314</b>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="gi_dontRenderImage" label="Don't render final image">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="light_doShadows" label="Shadows">
+     <value>1</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="bool" name="show_progress_window" label="Progress window">
+     <value>1</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/SettingsCameraDof" type="settings" layout="">
+ <plugin>
+  <vrayplugin version="7" type="settings" name="SettingsCameraDof">
+   <parameters>
+    <parameter handler="default" listType="none" type="bool" name="on" label="On">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="subdivs" label="Subdivs">
+     <value>8</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="anisotropy" label="Anisotropy">
+     <value>0.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="focal_dist" label="Focal dist">
+     <value>517.517029</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="sides_on" label="Blades on">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="center_bias" label="Center bias">
+     <value>0.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="sides_num" label="Sides number">
+     <value>5</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="rotation" label="Rotation">
+     <value>0.000000</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="bool" name="override_focal_dist" label="Override focal dist">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="aperture" label="Aperture">
+     <value>5.000000</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/SettingsCaustics" type="settings" layout="">
+ <plugin>
+  <vrayplugin version="7" type="settings" name="SettingsCaustics">
+   <parameters>
+    <parameter handler="default" listType="none" type="bool" name="on" label="On">
+     <value>0</value>
+    </parameter>
+    <parameter handler="FileBrowserHandler" listType="none" type="string" name="file" label="File">
+     <value></value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="show_calc_phase" label="Show calculations">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="dont_delete" label="Don't delete">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="max_photons" label="Max photons">
+     <value>30</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="max_density" label="Max density">
+     <value>0.000000</value>
+    </parameter>
+    <parameter handler="ComboBoxHandler" listType="none" type="integer" name="mode" label="Mode">
+     <value>0</value>
+    </parameter>
+    <parameter handler="FileBrowserHandler" listType="none" type="string" name="auto_save_file" label="Auto save File">
+     <value></value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="multiplier" label="Multiplier">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="search_distance" label="Search dist">
+     <value>20.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="auto_save" label="Auto save">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/SettingsImageSampler" type="settings" layout="">
+ <plugin>
+  <vrayplugin version="7" type="settings" name="SettingsImageSampler">
+   <parameters>
+    <parameter handler="default" listType="none" type="integer" name="dmc_minSubdivs" label="Min subdivs">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="subdivision_normals" label="Nrm thresh">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="subdivision_maxRate" label="Max rate">
+     <value>2</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="subdivision_threshold" label="Clr thresh">
+     <value>0.150000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="dmc_threshold" label="Clr thresh">
+     <value>0.010000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="dmc_maxSubdivs" label="Max subdivs">
+     <value>4</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="subdivision_minRate" label="Min rate">
+     <value>-1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="fixed_subdivs" label="Subdivs">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="subdivision_jitter" label="Randomize samples">
+     <value>1</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="bool" name="dmc_use_dmc_sampler_thresh" label="Use DMC sampler thresh">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="dmc_show_samples" label="Show samples">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="subdivision_normals_threshold" label="Nrm thresh">
+     <value>0.100000</value>
+    </parameter>
+    <parameter handler="ComboBoxHandler" listType="none" type="integer" name="type" label="Type">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="subdivision_edges" label="Object outline">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="subdivision_show_samples" label="Show samples">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/SettingsGI" type="settings" layout="">
+ <plugin>
+  <vrayplugin version="7" type="settings" name="SettingsGI">
+   <parameters>
+    <parameter handler="default" listType="none" type="bool" name="on" label="On">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="saturation" label="Saturation">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="ray_distance_on" label="ray_distance_on">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="ray_distance" label="ray_distance">
+     <value>100000.000000</value>
+    </parameter>
+    <parameter handler="ComboBoxHandler" listType="none" type="integer" name="primary_engine" label="GI Engine">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="save_maps_per_frame" label="Save maps per frame">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="contrast_base" label="Contrast base">
+     <value>0.500000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="secondary_multiplier" label="Multiplier">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="ao_on" label="On">
+     <value>0</value>
+    </parameter>
+    <parameter handler="ComboBoxHandler" listType="none" type="integer" name="secondary_engine" label="GI engine">
+     <value>3</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="reflect_caustics" label="Reflective">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="ao_amount" label="Amount">
+     <value>0.800000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="primary_multiplier" label="Multiplier">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="refract_caustics" label="Refractive">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="ao_radius" label="Radius">
+     <value>10.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="contrast" label="Contrast">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="ao_subdivs" label="Subdivs">
+     <value>8</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/SettingsDMCGI" type="settings" layout="">
+ <plugin>
+  <vrayplugin version="7" type="settings" name="SettingsDMCGI">
+   <parameters>
+    <parameter handler="default" listType="none" type="integer" name="subdivs" label="Subdivs">
+     <value>8</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="depth" label="Bounces">
+     <value>3</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+</vropt>

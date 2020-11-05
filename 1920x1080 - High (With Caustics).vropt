@@ -1,0 +1,174 @@
+<vropt>
+<Asset renderer="vray" url="/SettingsDMCSampler" type="settings" layout="">
+ <plugin>
+  <vrayplugin version="7" type="settings" name="SettingsDMCSampler">
+   <parameters>
+    <parameter handler="default" listType="none" type="integer" name="adaptive_min_samples" label="Min samples">
+     <value>16</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="subdivs_mult" label="Global subdivs mult">
+     <value>16.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="adaptive_threshold" label="Noise threshold">
+     <value>0.002000</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/SettingsOutput" type="settings" layout="">
+ <plugin>
+  <vrayplugin version="7" type="settings" name="SettingsOutput">
+   <parameters>
+    <parameter handler="default" listType="none" type="integer" name="img_width" label="Width">
+     <value>1920</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="img_height" label="Height">
+     <value>1080</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="float" name="img_imageAspect" label="Image aspect ratio">
+     <value>1.777778</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/SettingsRegionsGenerator" type="settings" layout="">
+ <plugin>
+  <vrayplugin version="7" type="settings" name="SettingsRegionsGenerator">
+   <parameters>
+    <parameter handler="default" listType="none" type="integer" name="xc" label="X">
+     <value>48</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="yc" label="Y">
+     <value>48</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/SettingsColorMapping" type="settings" layout="">
+ <plugin>
+  <vrayplugin version="7" type="settings" name="SettingsColorMapping">
+   <parameters>
+    <parameter handler="default" listType="none" type="float" name="bright_mult" label="Bright multiplier">
+     <value>0.300000</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/SettingsIrradianceMap" type="settings" layout="">
+ <plugin>
+  <vrayplugin version="7" type="settings" name="SettingsIrradianceMap">
+   <parameters>
+    <parameter handler="default" listType="none" type="integer" name="subdivs" label="HSph. subdivs">
+     <value>80</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="max_rate" label="Max rate">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="min_rate" label="Min rate">
+     <value>-5</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/SettingsLightCache" type="settings" layout="">
+ <plugin>
+  <vrayplugin version="7" type="settings" name="SettingsLightCache">
+   <parameters>
+    <parameter handler="default" listType="none" type="integer" name="subdivs" label="Subdivs">
+     <value>1000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="filter_samples" label="Interp samples">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="sample_size" label="Sample size">
+     <value>0.030000</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/SettingsEnvironment/gi_tex" type="texture" layout="">
+ <plugin>
+  <vrayplugin version="7" type="texture" name="TexAColorOp">
+   <parameters>
+    <parameter handler="default" listType="none" type="acolor texture" name="color_a" label="Color A">
+     <value>
+      <r>0.800000</r>
+      <g>0.901961</g>
+      <b>1.000000</b>
+     </value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/SunLight" type="light" layout="">
+ <plugin>
+  <vrayplugin version="7" type="light" name="SunLight">
+   <parameters>
+    <parameter handler="default" listType="none" type="bool" name="enabled" label="Enabled">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/SettingsEnvironment" type="settings" layout="">
+ <plugin>
+  <vrayplugin version="7" type="settings" name="SettingsEnvironment">
+   <parameters>
+    <parameter handler="default" listType="none" type="float" name="gi_tex_mult" label="GI Texture Multiplier">
+     <value>30.000000</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="acolor texture" name="gi_tex_tex" label="GI Texture">
+     <value></value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/CameraPhysical" type="settings" layout="">
+ <plugin>
+  <vrayplugin version="7" type="settings" name="CameraPhysical">
+   <parameters>
+    <parameter handler="default" listType="none" type="float" name="shutter_speed" label="Shutter speed">
+     <value>70.000000</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/SettingsCaustics" type="settings" layout="">
+ <plugin>
+  <vrayplugin version="7" type="settings" name="SettingsCaustics">
+   <parameters>
+    <parameter handler="default" listType="none" type="bool" name="on" label="On">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="max_photons" label="Max photons">
+     <value>300</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/SettingsImageSampler" type="settings" layout="">
+ <plugin>
+  <vrayplugin version="7" type="settings" name="SettingsImageSampler">
+   <parameters>
+    <parameter handler="default" listType="none" type="integer" name="dmc_minSubdivs" label="Min subdivs">
+     <value>2</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="dmc_maxSubdivs" label="Max subdivs">
+     <value>6</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+</vropt>
